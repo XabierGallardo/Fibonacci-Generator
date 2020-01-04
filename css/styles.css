@@ -2,29 +2,52 @@
 	font-family: trattatello;
 	src: url(../font/trattatello.ttf);
 }
+
 body {
 	font-family: trattatello;
 	background-image: url("../img/fibonacci.jpg");
 	background-position-x: right; 
 	background-repeat: no-repeat;
 	background-color: #f9f9f9;
-	width: 100%;
-	height: 100%;
 	margin: 0 auto;
 }
 
 #board {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	height: 100%;
+	justify-content: space-between;
+	height: 1000px;
+	padding-left: 4%;
 }
 
 #title {
 	font-size: xxx-large;
+	border: 2px solid;
+}
+
+#input {
+	width: 300px;
+	height: 500px;
+	border: 2px solid;
+	display: flex;
+	flex-direction: column;
+}
+
+#sequences, #generate, #numbers {
+	font-family: trattatello;
+	font-size: xxx-large;
+}
+
+#generate {
+	background-color: #f9f9f9;
+	border: 0;
+}
+
+#generate:hover{
+	cursor: pointer;
 }
 
 #numbers {
 	border: 2px solid;
-	height: 120px;
+	height: 150px;
 }

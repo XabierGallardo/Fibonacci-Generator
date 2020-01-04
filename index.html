@@ -6,10 +6,15 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script type="text/javascript" src="js/fibonacci.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="board">
 		<h1 id="title">Fibonacci Generator</h1>
+		<div id="input">
+			<input id="sequences" type="text" name="sequences">
+			<input id="generate" onclick="test()" type="submit" name="Generate" value="Generate">
+		</div>
 		<div id="numbers"></div>		
 	</div>
 </body>

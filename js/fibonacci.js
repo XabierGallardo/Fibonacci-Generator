@@ -1,17 +1,22 @@
-var fibonacci = [0,1];
-//var sequences = prompt("n of seq");
+$(function() {
+	var fibonacci = [0,1];
+	var sequences = $("#sequences").val();
 
-if (sequences <= 0) {
-	console.log("invalid number");
+	$("#generate").click(function () {
+		alert("test");
+		if (sequences <= 0) {
+		console.log("invalid number");
 
-} else {
+		} else {
 
-	for (var i = 0; i<sequences; i++) {
+			for (var i = 0; i<sequences; i++) {
 
-    var a = fibonacci[fibonacci.length - 2];
-    var b = fibonacci[fibonacci.length - 1];
-    var c = a + b;
-    fibonacci.push(c);
-  	}
-  	console.log(fibonacci);
-}
+		    var a = fibonacci[fibonacci.length - 2];
+		    var b = fibonacci[fibonacci.length - 1];
+		    var c = a + b;
+		    fibonacci.push(c);
+		  	}
+		  	$("#generate").html(fibonacci);
+		}
+	});
+});
