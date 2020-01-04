@@ -5,4 +5,11 @@
 body {
 	font-family: trattatello;
 	background-image: url("../img/fibonacci.jpg");
+	background-position-x: right; 
+	background-repeat: no-repeat;
+	background-color: #f9f9f9;
+}
+
+#title {
+	font-size: xx-large;
 }
