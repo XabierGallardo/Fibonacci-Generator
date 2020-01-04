@@ -1,0 +1,8 @@
+@font-face {
+	font-family: trattatello;
+	src: url(../font/trattatello.ttf);
+}
+body {
+	font-family: trattatello;
+	background-image: url("../img/fibonacci.jpg");
+}
