@@ -3,6 +3,10 @@
 	src: url(../font/trattatello.ttf);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
 	font-family: trattatello;
 	background-image: url("../img/fibonacci.jpg");
@@ -17,37 +21,49 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 1000px;
-	padding-left: 4%;
+	padding-left: 2%;
 }
 
 #title {
-	font-size: xxx-large;
-	border: 2px solid;
+	font-size: 70px;
+	margin-bottom: 0;
+}
+
+#title a, #clear a {
+	text-decoration: none;
+	color: black;
 }
 
 #input {
 	width: 300px;
-	height: 500px;
-	border: 2px solid;
+	height: 300px;
+	padding-left: 2%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
-#sequences, #generate, #numbers {
+#sequences, #generate, #numbers, #clear {
 	font-family: trattatello;
 	font-size: xxx-large;
 }
 
-#generate {
+#generate, #clear {
 	background-color: #f9f9f9;
 	border: 0;
 }
 
-#generate:hover{
+#generate:hover, #clear:hover {
 	cursor: pointer;
 }
 
+*:focus {
+	outline: none;
+}
+
 #numbers {
-	border: 2px solid;
+	display: flex;
+	flex-wrap: wrap;
 	height: 150px;
+	width: 95%;
 }
