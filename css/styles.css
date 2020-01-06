@@ -67,3 +67,101 @@ body {
 	height: 150px;
 	width: 95%;
 }
+
+/*Media queries*/
+@media screen and (max-width: 1530px) {
+	body {
+		background-size: 1000px 580px;
+	}
+	#board {
+		height: 730px;
+	}
+	#title {
+	font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 1160px) {	
+	body {
+		background-size: 800px 480px;
+	}
+	#board {
+		height: 670px;
+	}
+}
+
+@media screen and (max-width: 1015px) {
+	#input {
+		width: 200px;
+		height: 200px;
+		padding-left: 0;
+	}
+	#title {
+	width: 30%;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	body {
+		background-size: 600px 380px;
+	}
+	#board {
+		height: 550px;
+	}
+	#sequences, #generate, #numbers, #clear {
+	font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	body {
+		background-size: 500px 325px;
+	}
+	#title {
+		width: 40%;
+		font-size: 30px;
+	}
+	#board {
+		height: 450px;
+	}
+	#sequences, #generate, #numbers, #clear {
+	font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	body {
+		background-size: 400px 270px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#board {
+		height: 400px;
+	}
+	#input {
+		width: 115px;
+	}
+	body {
+		background-size: 375px 250px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#board {
+		height: 400px;
+	}
+	#input {
+		width: 115px;
+	}
+	body {
+		background-size: 300px 200px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	
+	body {
+		background-size: 230px 160px;
+	}
+}
