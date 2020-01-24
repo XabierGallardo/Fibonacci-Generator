@@ -48,6 +48,10 @@ body {
 	font-size: xxx-large;
 }
 
+#sequences {
+	text-align: center;
+}
+
 #generate, #clear {
 	background-color: #f9f9f9;
 	border: 0;
@@ -141,6 +145,9 @@ body {
 	}
 	#input {
 		width: 115px;
+	}
+	#sequences {
+		font-size: x-large;
 	}
 	body {
 		background-size: 375px 250px;
