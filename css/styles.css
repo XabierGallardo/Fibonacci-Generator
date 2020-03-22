@@ -12,6 +12,7 @@ body {
 	background-image: url("../img/fibonacci.jpg");
 	background-position-x: right; 
 	background-repeat: no-repeat;
+	background-size: 60%;
 	background-color: #f9f9f9;
 	margin: 0 auto;
 }
@@ -20,12 +21,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 1000px;
+	height: 765px;
 	padding-left: 2%;
 }
 
 #title {
-	font-size: 70px;
+	font-size: 50px;
 	margin-bottom: 0;
 }
 
@@ -45,7 +46,7 @@ body {
 
 #sequences, #generate, #numbers, #clear {
 	font-family: trattatello;
-	font-size: xxx-large;
+	font-size: 47px;
 }
 
 #sequences {
@@ -101,7 +102,7 @@ body {
 		padding-left: 0;
 	}
 	#title {
-	width: 30%;
+	width: 45%;
 	}
 }
 
