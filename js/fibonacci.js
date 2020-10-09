@@ -1,15 +1,19 @@
 window.onload = function() {
 
 	var fibonacci = [0,1];
+
 	$("#generate").click(startSequence);
+
 	$("#clear").click(function() {
 		$("#numbers").html("");
+		fibonacci = [0,1]; //Reset initial values
 	});
 
 
 	function startSequence () {
 
 	if ($("#sequences").val() <= 0) {
+
 		$("#numbers").html("Invalid number");
 
 	} else {
@@ -21,7 +25,9 @@ window.onload = function() {
 		    var c = a + b;
 		    fibonacci.push(c);
 	  	}
+
 	  	$("#numbers").html(fibonacci.join(" "));
+
 		}
 	}	
 }
