@@ -2,6 +2,10 @@ window.onload = function() {
 
 	var fibonacci = [0,1];
 	$("#generate").click(startSequence);
+	$("#clear").click(function() {
+		$("#numbers").html("");
+	});
+
 
 	function startSequence () {
 

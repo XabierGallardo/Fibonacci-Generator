@@ -3,16 +3,14 @@
 	src: url(../font/trattatello.ttf);
 }
 
-html {
-  overflow-y: scroll;
-}
+html { overflow-y: scroll; }
 
 body {
 	font-family: trattatello;
 	background-image: url("../img/fibonacci.jpg");
 	background-position-x: right; 
 	background-repeat: no-repeat;
-	background-size: 60%;
+	background-size: 115vh;
 	background-color: #f9f9f9;
 	margin: 0 auto;
 }
@@ -21,23 +19,23 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 765px;
+	height: 100vh;
 	padding-left: 2%;
 }
 
-#title {
-	font-size: 50px;
-	margin-bottom: 0;
+#title { 
+	font-size: 70px; 
+	height: 10vh;
 }
 
-#title a, #clear a {
+#title a {
 	text-decoration: none;
 	color: black;
 }
 
 #input {
 	width: 300px;
-	height: 300px;
+	height: 30vh;
 	padding-left: 2%;
 	display: flex;
 	flex-direction: column;
@@ -49,9 +47,7 @@ body {
 	font-size: 47px;
 }
 
-#sequences {
-	text-align: center;
-}
+#sequences { text-align: center; }
 
 #generate, #clear {
 	background-color: #f9f9f9;
@@ -62,114 +58,11 @@ body {
 	cursor: pointer;
 }
 
-*:focus {
-	outline: none;
-}
+*:focus { outline: none; }
 
 #numbers {
 	display: flex;
 	flex-wrap: wrap;
-	height: 150px;
+	height: 24vh;
 	width: 95%;
-}
-
-/*Media queries*/
-@media screen and (max-width: 1530px) {
-	body {
-		background-size: 1000px 580px;
-	}
-	#board {
-		height: 730px;
-	}
-	#title {
-	font-size: 50px;
-	}
-}
-
-@media screen and (max-width: 1160px) {	
-	body {
-		background-size: 800px 480px;
-	}
-	#board {
-		height: 670px;
-	}
-}
-
-@media screen and (max-width: 1015px) {
-	#input {
-		width: 200px;
-		height: 200px;
-		padding-left: 0;
-	}
-	#title {
-	width: 45%;
-	}
-}
-
-@media screen and (max-width: 835px) {
-	body {
-		background-size: 600px 380px;
-	}
-	#board {
-		height: 550px;
-	}
-	#sequences, #generate, #numbers, #clear {
-	font-size: 40px;
-	}
-}
-
-@media screen and (max-width: 835px) {
-	body {
-		background-size: 500px 325px;
-	}
-	#title {
-		width: 40%;
-		font-size: 30px;
-	}
-	#board {
-		height: 450px;
-	}
-	#sequences, #generate, #numbers, #clear {
-	font-size: 30px;
-	}
-}
-
-@media screen and (max-width: 630px) {
-	body {
-		background-size: 400px 270px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	#board {
-		height: 400px;
-	}
-	#input {
-		width: 115px;
-	}
-	#sequences {
-		font-size: x-large;
-	}
-	body {
-		background-size: 375px 250px;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	#board {
-		height: 400px;
-	}
-	#input {
-		width: 115px;
-	}
-	body {
-		background-size: 300px 200px;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	
-	body {
-		background-size: 230px 160px;
-	}
 }
