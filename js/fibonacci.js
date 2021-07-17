@@ -1,33 +1,35 @@
-window.onload = function() {
-
-	var fibonacci = [0,1];
-
-	$("#generate").click(startSequence);
-
-	$("#clear").click(function() {
-		$("#numbers").html("");
-		fibonacci = [0,1]; //Reset initial values
-	});
+// Initial Fibonacci's array
+let fibonacci = [0,1];
 
 
-	function startSequence () {
+// Clear button
+$("#clear").click(function() {
+	$("#numbers").html("");
+	fibonacci = [0,1]; //Reset initial values
+});
 
-	if ($("#sequences").val() <= 0) {
+// Generate button
+$("#generate").click(startSequence);
 
-		$("#numbers").html("Invalid number");
 
-	} else {
+// Fibonacci generator
+function startSequence () {
 
-		for (var i = 0; i < $("#sequences").val(); i++) {
+if ($("#sequences").val() <= 0) {
 
-		    var a = fibonacci[fibonacci.length - 2];
-		    var b = fibonacci[fibonacci.length - 1];
-		    var c = a + b;
-		    fibonacci.push(c);
-	  	}
+	$("#numbers").html("Invalid number");
 
-	  	$("#numbers").html(fibonacci.join(" "));
+} else {
 
-		}
-	}	
+	for (let i = 0; i < $("#sequences").val(); i++) {
+
+	    let a = fibonacci[fibonacci.length - 2];
+	    let b = fibonacci[fibonacci.length - 1];
+	    let c = a + b;
+	    fibonacci.push(c);
+  	}
+
+  	$("#numbers").html(fibonacci.join(" "));
+
+	}
 }
